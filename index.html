@@ -64,10 +64,7 @@
     letter-spacing:.06em;text-transform:uppercase;text-decoration:none;
     display:flex;align-items:center;gap:10px;white-space:nowrap;
   }
-  .wordmark::before{
-    content:"";width:12px;height:12px;border-radius:50%;
-    background:var(--mustard);flex:none;
-  }
+  .wordmark::before{display:none;}
   nav.main a{
     font-family:var(--body);font-weight:500;
     font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
@@ -112,9 +109,7 @@
     font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--walnut);
     display:flex;align-items:center;gap:12px;margin-bottom:28px;
   }
-  .eyebrow::before{
-    content:"";width:9px;height:9px;border-radius:50%;background:var(--olive);flex:none;
-  }
+  .eyebrow::before{display:none;}
   h1{
     font-family:var(--display);font-weight:600;
     font-size:clamp(38px,6.4vw,68px);
@@ -365,7 +360,7 @@
     </svg>
 
     <div class="wrap hero-inner">
-      <p class="eyebrow">Operations · Marketing · Aerial Content</p>
+      <p class="eyebrow">Operations · Marketing · Content Production</p>
       <h1>Run the ops. Grow the revenue. <em>Get the shot.</em></h1>
       <p class="lede">
         I'm Angelique Stolar — an operations and marketing professional with 7+ years across
@@ -612,7 +607,7 @@
 <footer class="foot">
   <div class="wrap foot-inner">
     <span>© 2026 Angelique Stolar</span>
-    <span>Ops · Mktg · Air — Based in Johnstown, PA</span>
+    <span>Ops · Mktg · Content — Based in Johnstown, PA</span>
   </div>
 </footer>
 

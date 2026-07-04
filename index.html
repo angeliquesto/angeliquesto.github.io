@@ -261,16 +261,6 @@
   }
   .work:hover .arrow{transform:translate(3px,-3px);}
 
-  /* experience */
-  .xp{list-style:none;border-top:1.5px solid var(--char);}
-  .xp li{
-    display:grid;grid-template-columns:1fr 280px;gap:20px;
-    padding:21px 0;border-bottom:1px solid var(--line);align-items:baseline;
-  }
-  @media(max-width:820px){.xp li{grid-template-columns:1fr;gap:4px;}}
-  .xp .role{font-family:var(--display);font-weight:600;font-size:17px;letter-spacing:.02em;}
-  .xp .org{font-size:15px;color:var(--walnut);text-align:right;}
-  @media(max-width:820px){.xp .org{text-align:left;}}
 
   /* credentials + tools */
   .cred-cols{display:grid;grid-template-columns:1fr 1fr;gap:52px;}
@@ -325,7 +315,6 @@
     <nav class="main" aria-label="Site">
       <a href="#services">Services</a>
       <a href="#work">Work</a>
-      <a href="#background">Background</a>
       <a class="cta" href="#contact"><span class="cta-long">Start a project</span><span class="cta-short">Contact</span></a>
     </nav>
   </div>
@@ -533,32 +522,6 @@
     </div>
   </section>
 
-  <!-- ============ BACKGROUND ============ -->
-  <section id="background">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Where I've done it</p>
-        <h2>Background</h2>
-      </div>
-      <ul class="xp reveal">
-        <li>          <span class="role">Director of Operations &amp; Marketing</span>
-          <span class="org">1901 Church Inc. / Steeples Project</span>
-        </li>
-        <li>          <span class="role">Freelance Content Producer &amp; Drone Pilot</span>
-          <span class="org">Modern Art &amp; Plate Glass</span>
-        </li>
-        <li>          <span class="role">Project Manager</span>
-          <span class="org">Column Five</span>
-        </li>
-        <li>          <span class="role">Digital Analyst &amp; Campaign Manager</span>
-          <span class="org">Element-360</span>
-        </li>
-        <li>          <span class="role">Digital Content Coordinator</span>
-          <span class="org">Smail Auto Group</span>
-        </li>
-      </ul>
-    </div>
-  </section>
 
   <!-- ============ CREDENTIALS + TOOLS ============ -->
   <section id="credentials">

@@ -110,6 +110,11 @@
     display:flex;align-items:center;gap:12px;margin-bottom:28px;
   }
   .eyebrow::before{display:none;}
+  .eb-part{white-space:nowrap;}
+  @media(max-width:640px){
+    .hero .eyebrow{flex-direction:column;gap:6px;}
+    .hero .eb-sep{display:none;}
+  }
   h1{
     font-family:var(--display);font-weight:600;
     font-size:clamp(38px,6.4vw,68px);
@@ -360,7 +365,7 @@
     </svg>
 
     <div class="wrap hero-inner">
-      <p class="eyebrow">Operations · Marketing · Content Production</p>
+      <p class="eyebrow"><span class="eb-part">Operations · Marketing</span><span class="eb-sep">&nbsp;·&nbsp;</span><span class="eb-part">Content Production</span></p>
       <h1>Run the ops. Grow the revenue. <em>Get the shot.</em></h1>
       <p class="lede">
         I'm Angelique Stolar — an operations and marketing professional with 7+ years across
@@ -410,7 +415,7 @@
         </article>
 
         <article class="svc reveal">
-          <span class="code">Campaigns</span>
+          <span class="code">Marketing</span>
           <h3>Campaign &amp; Project Management</h3>
           <p>
             Contract PM and analytics for agencies and marketing teams. I've
@@ -429,7 +434,7 @@
         </article>
 
         <article class="svc reveal">
-          <span class="code">Aerial</span>
+          <span class="code">Content</span>
           <h3>Drone &amp; Content Production</h3>
           <p>
             FAA Part 107–certified aerial photography and videography, plus

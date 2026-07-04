@@ -78,17 +78,25 @@
   nav.main a.cta{
     color:var(--char);border:1.5px solid var(--char);
     padding:9px 18px;border-radius:999px;
+    white-space:nowrap;flex:none;
   }
   nav.main a.cta:hover,nav.main a.cta:focus-visible{background:var(--char);color:var(--cream);}
+  .cta-short{display:none;}
   @media(max-width:640px){
     nav.main a:not(.cta){display:none;}
     .top-inner{padding:11px 0;}
     .wordmark{font-size:13.5px;letter-spacing:.04em;gap:8px;}
     .wordmark::before{width:9px;height:9px;}
     nav.main a.cta{
-      margin-left:0;padding:8px 14px;
-      font-size:10.5px;letter-spacing:.1em;white-space:nowrap;
+      margin-left:0;padding:8px 16px;
+      font-size:11px;letter-spacing:.12em;
     }
+    .cta-long{display:none;}
+    .cta-short{display:inline;}
+  }
+  @media(max-width:370px){
+    .wordmark{font-size:12px;gap:6px;}
+    nav.main a.cta{padding:7px 13px;font-size:10.5px;}
   }
 
   /* ---------- hero ---------- */
@@ -310,7 +318,7 @@
       <a href="#services">Services</a>
       <a href="#work">Work</a>
       <a href="#background">Background</a>
-      <a class="cta" href="#contact">Start a project</a>
+      <a class="cta" href="#contact"><span class="cta-long">Start a project</span><span class="cta-short">Contact</span></a>
     </nav>
   </div>
 </header>
